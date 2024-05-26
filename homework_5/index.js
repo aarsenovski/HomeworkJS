@@ -29,7 +29,7 @@ promise1.then((res) => console.log(res)).catch((error) => console.log(error));
 // exercise 2.2
 let getSomeData = () => {
   return new Promise((resolve, reject) => {
-    let hasAccess = false;
+    let hasAccess = true;
     const data = { name: "Andrej", age: 29 };
     if (hasAccess) {
       resolve(data);
@@ -53,16 +53,16 @@ let canIDrinkAlcohol = (number) => {
   });
 };
 
-canIDrinkAlcohol(44)
-  .then((age) => console.log(age))
-  .catch((error) => console.log(error));
+// canIDrinkAlcohol(44)
+//   .then((age) => console.log(age))
+//   .catch((error) => console.log(error));
 
-canIDrinkAlcohol(6)
-  .then((age) => console.log(age))
-  .catch((error) => console.log(error));
+// canIDrinkAlcohol(6)
+//   .then((age) => console.log(age))
+//   .catch((error) => console.log(error));
 
 // exercise 2.4
-let VerifyIfICanDrinkAlcohol = async (number) => {
+let verifyIfICanDrinkAlcohol = async (number) => {
   try {
     const message = await canIDrinkAlcohol(number);
     console.log(message);
@@ -71,8 +71,8 @@ let VerifyIfICanDrinkAlcohol = async (number) => {
   }
 };
 
-VerifyIfICanDrinkAlcohol(2);
-VerifyIfICanDrinkAlcohol(22);
+verifyIfICanDrinkAlcohol(2);
+verifyIfICanDrinkAlcohol(22);
 
 // exercise 2.5
 let areYouMilenial = (yourAge) => {
@@ -85,7 +85,7 @@ let areYouMilenial = (yourAge) => {
   });
 };
 
-let MilenialOrNot = async (yourAge) => {
+let milenialOrNot = async (yourAge) => {
   try {
     const approval = await areYouMilenial(yourAge);
     console.log(approval);
@@ -94,8 +94,8 @@ let MilenialOrNot = async (yourAge) => {
   }
 };
 
-MilenialOrNot(1990);
-MilenialOrNot(1980);
+milenialOrNot(1990);
+milenialOrNot(1980);
 
 // exercise 3
 let checkNumber = (number) => {
@@ -163,4 +163,4 @@ let countDown = (seconds) => {
   }, 1000);
 };
 
-countDown(5);
+countDown(7);
