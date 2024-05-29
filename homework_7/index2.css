@@ -1,0 +1,31 @@
+#registration-form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  border: 3px solid black;
+  width: 250px;
+  background-color: grey;
+  transition: background-color 0.5s ease-in-out;
+  border-radius: 8px;
+  padding: 20px 20px;
+}
+
+#registration-form > input {
+  border: none;
+  border-radius: 8px;
+  padding: 20px 20px;
+}
+
+.reg-button {
+  background-color: green;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 20px;
+  margin-top: 30px;
+  margin-left: 70px;
+  color: white;
+  width: 150px;
+  font-weight: 700;
+  font-size: 15px;
+}
