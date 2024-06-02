@@ -1,0 +1,25 @@
+.user {
+  border: 1px solid black;
+  margin: 10px;
+  width: 180px;
+  padding: 20px;
+  background-color: beige;
+  border-radius: 20px;
+  transform-origin: 50%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#user {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+h3 {
+  padding-left: 20px;
+  font-size: 40px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
