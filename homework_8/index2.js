@@ -14,8 +14,10 @@ fetchUsers = () => {
         characterImg.setAttribute("width", "150px");
 
         const name = document.createElement("p");
+        name.setAttribute("class", "name");
         const gender = document.createElement("p");
         const status = document.createElement("p");
+        status.setAttribute("class", character.status.toLowerCase());
         const numberOfEps = document.createElement("p");
 
         characterImg.textContent = character.image;
@@ -23,7 +25,7 @@ fetchUsers = () => {
         gender.textContent = character.gender;
         status.textContent = character.status;
 
-        numberOfEps.textContent = character.episode.length;
+        numberOfEps.textContent = `In ${character.episode.length} episodes`;
 
         userInfoDetails.appendChild(characterImg);
         userInfoDetails.appendChild(name);

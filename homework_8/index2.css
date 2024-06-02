@@ -1,3 +1,6 @@
+body {
+  background-color: cadetblue;
+}
 .user {
   border: 1px solid black;
   margin: 10px;
@@ -22,4 +25,20 @@ h3 {
   padding-bottom: 0px;
   margin-bottom: 0px;
   text-align: center;
+}
+
+.name {
+  height: 30px;
+}
+
+.alive {
+  color: green;
+}
+
+.dead {
+  color: red;
+}
+
+.unknown {
+  color: gray;
 }
