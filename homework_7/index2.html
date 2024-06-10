@@ -7,7 +7,7 @@
   </head>
   <body>
     <h3>Registration form</h3>
-    <div id="registration-form">
+    <form id="registration-form">
       <label for="fname">First Name:</label>
       <input id="fname" type="text" name="firstName" placeholder="First name" />
 
@@ -18,17 +18,18 @@
       <input id="email" type="text" name="email" placeholder="Email" />
 
       <label for="pw">Password:</label>
-      <input id="pw" type="text" name="password" placeholder="Password" />
+      <input id="pw" type="password" name="password" placeholder="Password" />
 
       <label for="pw-confirm">Repeat password:</label>
       <input
         id="pw-confirm"
-        type="text"
+        type="password"
         name="password-confirm"
         placeholder="Confirm password"
       />
-    </div>
-    <button type="button" id="submit-btn" class="reg-button">Submit!</button>
+
+      <button type="submit" id="submit-btn" class="reg-button">Submit!</button>
+    </form>
     <script src="index2.js"></script>
   </body>
 </html>

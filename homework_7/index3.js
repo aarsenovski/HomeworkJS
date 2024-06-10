@@ -8,13 +8,17 @@ console.log(greenLight);
 changeColor = (event) => {
   if (event.key === "r") {
     redLight.style.backgroundColor = "red";
+    orangeLight.style.backgroundColor = "grey";
+    greenLight.style.backgroundColor = "grey";
   } else if (event.key === "o") {
     orangeLight.style.backgroundColor = "orange";
+    redLight.style.backgroundColor = "gray";
+    greenLight.style.backgroundColor = "grey";
   } else if (event.key === "g") {
     greenLight.style.backgroundColor = "green";
+    redLight.style.backgroundColor = "grey";
+    orangeLight.style.backgroundColor = "grey";
   }
 };
 
-redLight.addEventListener("keydown", changeColor);
-orangeLight.addEventListener("keydown", changeColor);
-greenLight.addEventListener("keydown", changeColor);
+document.addEventListener("keydown", changeColor);
